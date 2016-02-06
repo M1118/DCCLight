@@ -1,0 +1,35 @@
+#######################################
+# Syntax Coloring Map DCCLight
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+DCCLight			KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+DCCLight                        KEYWORD2
+loop                            KEYWORD2
+setBrightness                   KEYWORD2
+setPeriod                       KEYWORD2
+setActive			KEYWORD2
+setDirection			KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+LIGHT_EFFECT_CONSTANT		LITERAL1
+LIGHT_EFFECT_DIMABLE		LITERAL1
+LIGHT_EFFECT_DIMMED		LITERAL1
+LIGHT_EFFECT_FLASH_50		LITERAL1
+LIGHT_EFFECT_FLASH_25		LITERAL1
+LIGHT_EFFECT_FLASH_75		LITERAL1
+LIGHT_EFFECT_FLICKER		LITERAL1
+LIGHT_EFFECT_SHOW_FLICKER	LITERAL1
+LIGHT_DIRECTIONAL		LITERAL1
+LIGHT_DIRECTIONAL_FWD		LITERAL1
+LIGHT_DIRECTIONAL_BCK		LITERAL1
+
