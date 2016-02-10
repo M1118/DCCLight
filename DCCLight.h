@@ -15,6 +15,10 @@
 #define LIGHT_EFFECT_FLASH_75		0x05
 #define LIGHT_EFFECT_FLICKER		0x06
 #define LIGHT_EFFECT_SLOW_FLICKER	0x07
+#define LIGHT_EFFECT_RANDOM_FLASH	0x08
+#define LIGHT_EFFECT_FLOURESCENT	0x09
+#define LIGHT_EFFECT_SLOW_START		0x0A
+#define LIGHT_EFFECT_PULSATING		0x0B
 
 #define LIGHT_DIRECTIONAL		0xc0
 #define LIGHT_DIRECTION_FWD		0x80
@@ -34,6 +38,10 @@ class DCCLight {
     int			count;
     boolean		forwards;
     boolean		requestedActive;
+    int			seqIndex;
+    unsigned int	*sequence;
+    boolean		on;
+    boolean             increasing;
   public:
     DCCLight(int, unsigned int);
     void loop();
@@ -42,5 +50,8 @@ class DCCLight {
     void setActive(boolean);
     void setDirection(boolean);
 };
+
+// On-off sequences of flashes for flourescent light startup
+static unsigned int fsequence[] = { 500, 350, 800, 200, 150, 150, 0 };
 
 #endif
